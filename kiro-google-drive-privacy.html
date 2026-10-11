@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kiro Google Drive 的 Google 用户数据访问、用途、本机存储、AI 处理、撤销授权及删除说明。">
+  <meta name="theme-color" content="#342632">
+  <title>隐私政策 | Kiro Google Drive</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
+    body { font-family: Arial, "Microsoft YaHei", sans-serif; }
+    h1, h2, h3 { font-family: inherit; letter-spacing: 0; }
+    .wordmark { font-size: 1.35rem; letter-spacing: .06em; }
+    .privacy-hero h1 { font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1.25; }
+    .policy h2 { font-size: 1.5rem; line-height: 1.5; }
+    code { overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="./kiro-google-drive.html" aria-label="Kiro Google Drive 应用首页">KIRO DRIVE</a>
+    <nav class="site-nav" aria-label="应用导航">
+      <a href="./kiro-google-drive.html">应用说明</a>
+      <a href="./kiro-google-drive-privacy.html" aria-current="page">隐私政策</a>
+      <a href="./kiro-google-drive-terms.html">使用条款</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap">
+    <header class="privacy-hero">
+      <p class="eyebrow">Kiro Google Drive · Privacy policy</p>
+      <h1>隐私政策</h1>
+      <p class="intro">本政策说明个人使用的本机 Google 文件连接配置如何访问和处理数据，以及用户如何停止访问并删除本机资料。</p>
+      <p class="last-updated">生效及更新日期：<time datetime="2026-10-11">2026 年 10 月 11 日</time></p>
+    </header>
+    <div class="privacy-layout">
+      <nav class="privacy-toc" aria-label="隐私政策目录">
+        <a href="#scope">01 · 运营方与适用范围</a>
+        <a href="#access">02 · 访问的数据</a>
+        <a href="#use">03 · 用途与有限使用</a>
+        <a href="#sharing">04 · AI 处理与共享</a>
+        <a href="#storage">05 · 存储与安全</a>
+        <a href="#controls">06 · 撤销与删除</a>
+        <a href="#website">07 · 网站与联系</a>
+      </nav>
+      <div class="policy">
+        <section id="scope">
+          <h2>1. 运营方与适用范围</h2>
+          <p>运营方为深圳市老人与海科技有限公司（Shenzhen Laorenyuhai Technology Co., Ltd.）；联系邮箱为 <a href="mailto:244566972qq@gmail.com">244566972qq@gmail.com</a>。</p>
+          <p>本政策适用于名为“Kiro Google Drive”的本机 OAuth 连接配置及这组说明页面。连接使用 Kiro 桌面应用和社区组件 <a href="https://github.com/piotr-agier/google-drive-mcp">@piotr-agier/google-drive-mcp</a> 2.12.0。我们不经营供公众使用的托管 MCP 或网盘服务，本网站也不接收 OAuth 回调、令牌或网盘文件。</p>
+          <p>Google、Kiro、用户选择的 AI 模型服务以及网站托管方分别按其适用条款处理其获得的数据。本政策不替代这些服务的政策。</p>
+        </section>
+        <section id="access">
+          <h2>2. 访问的数据与权限范围</h2>
+          <p>用户完成 Google 授权后，工具可访问账号有权访问的网盘文件及文档、表格、幻灯片。任务可能涉及文件名称、标识、类型、文件夹、元数据、正文、单元格、图表、幻灯片，以及操作需要的共享权限或评论等数据。连接状态还可能显示授权账号的邮箱、显示名和已授予范围。</p>
+          <p>当前请求 <code>drive</code>、<code>documents</code>、<code>spreadsheets</code>、<code>presentations</code> 四个完整 OAuth 范围。它们包含相应文件的读取、创建、编辑和删除能力，受 Google 账号实际权限与具体工具限制；不请求 Calendar 权限。</p>
+          <p>OAuth 客户端配置、访问令牌和刷新令牌用于建立及维持已同意的连接。授权范围表示技术上可访问的范围，实际工具调用及数据读取仍依用户的具体任务进行。</p>
+        </section>
+        <section id="use">
+          <h2>3. 使用目的与 Google 有限使用要求</h2>
+          <p>Google 数据用于用户发起的文件搜索、阅读、汇总、整理以及文档、表格和幻灯片处理；授权令牌用于验证请求和在授权有效时刷新访问。我们不将 Google 用户数据出售、用于广告投放或广告定向，也不由本集成或运营方用其训练通用 AI 模型。</p>
+          <p>Kiro Google Drive 对从 Google API 获取的信息的使用及向其他应用传输，遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>，包括 Limited Use（有限使用）要求。对任务必要的数据传输应服务于用户可见、已要求的功能；本集成及运营方不将取得的数据转作无关用途。</p>
+          <p>运营方不会将私有 Google 文件集中上传至本网站。支持人员仅在用户主动提供资料并要求协助时处理相关资料，或为履行适用法律义务处理必要信息。请通过公开邮箱咨询操作问题，不要发送令牌、客户端密钥或不必要的文件正文。</p>
+        </section>
+        <section id="sharing">
+          <h2>4. AI 服务处理与数据共享</h2>
+          <p>本机 MCP 会通过网络与 Google API 通信，并把工具返回内容交给 Kiro。Kiro 为完成用户的任务，可能把文件名称、内容或其他返回数据纳入聊天上下文，并发送到其 AI 处理服务或用户选择的模型服务提供方。这是本连接的重要数据流向，不能理解为所有数据只保留在本机。</p>
+          <p>第三方 AI 服务的处理、保留、地区、训练选项及删除机制取决于用户所用服务、账号类型和实际设置。本集成及运营方不控制这些服务，也不代表它们作出“不保留”或“不训练”的保证。用户应在发送 Google 数据前核对其适用政策和设置，确保任务所用服务满足 Google 数据的有限使用要求；不希望发送某项内容时，应停止相应工具调用或断开连接。</p>
+          <p>正式发布 OAuth 应用不会自行更改文件共享设置。只有用户指示的实际文件或共享操作才可能改变文件状态。我们不因用户授权而向其他无关使用者公开文件。</p>
+        </section>
+        <section id="storage">
+          <h2>5. 存储、保留与安全</h2>
+          <p>当前桌面配置将 OAuth 客户端配置及授权令牌保存在用户电脑的 <code>~/.config/google-drive-mcp/</code> 目录内。具体位置以本机 MCP 配置为准。令牌用于后续认证和自动刷新，不保存在本说明网站或公开代码仓库中。</p>
+          <p>用户任务的聊天记录、日志、下载文件、导出结果或备份可能另外保存在电脑上、Kiro 账号服务中或所选 AI 服务中，具体取决于任务和软件设置。本集成不设置这些服务统一的自动删除期限；本机文件会保留到用户或软件删除它们，第三方保留及删除规则由其适用政策确定。</p>
+          <p>授权回调使用只监听本机的回环地址，例如 <code>127.0.0.1</code>；Google API 请求使用 HTTPS。用户应保护本机账号、凭据目录和备份，不把密钥或令牌发到聊天、邮件或代码仓库。文件权限、设备安全与第三方服务也影响保护效果，我们不作绝对安全保证。</p>
+        </section>
+        <section id="controls">
+          <h2>6. 用户控制、撤销授权与删除</h2>
+          <ul>
+            <li><strong>停止工具访问：</strong>在 Kiro 中禁用 Google Drive MCP，并停止运行相关本机进程。</li>
+            <li><strong>撤销 Google 授权：</strong>前往 <a href="https://myaccount.google.com/connections">Google 账号第三方连接管理</a>，找到 Kiro Google Drive 并移除访问权限。</li>
+            <li><strong>删除本机凭据：</strong>停止 MCP 后删除其 <code>tokens.json</code>，以及不再使用的 OAuth 客户端配置和任何相关备份。删除本机令牌不等于在 Google 服务端撤销授权；建议同时执行上一项。</li>
+            <li><strong>清理已取得的内容：</strong>按需要删除本机下载、导出文件、日志、任务输出及备份；通过 Kiro 和所选 AI 服务的设置或支持渠道处理相应聊天记录和服务端副本。</li>
+          </ul>
+          <p>撤销权限或删除令牌不自动删除已下载的文件、已产生的聊天内容或 Google 网盘原文件。要删除 Google 文件本身，应在 Google 服务中操作或明确指示相应文件删除任务。运营方收到的支持邮件可向联系邮箱申请查阅、更正或删除；处理请求可能需要身份核实，并须考虑适用的保留义务。</p>
+        </section>
+        <section id="website">
+          <h2>7. 说明网站、联系与更新</h2>
+          <p>这些是静态说明页面，没有账号登录、文件上传、支付、分析脚本或广告追踪；页面代码不设置 Cookie 或浏览器存储。GitHub Pages 托管方可能收集安全及访问记录，其处理见 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>。网站访问记录与本机 MCP 访问的 Google 文件是不同的数据。</p>
+          <p>点击邮件链接只会打开用户的邮件应用。用户实际发送的邮件会由双方邮件服务处理；公开支持地址使用 Gmail，适用 <a href="https://policies.google.com/privacy">Google 隐私政策</a>。</p>
+          <p>隐私问题或请求请联系 <a href="mailto:244566972qq@gmail.com">244566972qq@gmail.com</a>。政策更新会在本页面标明日期；若用途、权限或数据流向发生实质变化，应先更新说明，并在需要时取得用户新的授权。</p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer wrap">
+    <p>&copy; 2026 Shenzhen Laorenyuhai Technology Co., Ltd.</p>
+    <a href="./kiro-google-drive.html">应用说明</a>
+    <a href="./kiro-google-drive-terms.html">使用条款</a>
+  </footer>
+</body>
+</html>
